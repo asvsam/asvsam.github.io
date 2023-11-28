@@ -30,6 +30,7 @@ theme: just-the-docs
 plugins:
   - jekyll-toc
   - jekyll-relative-links
+  - jekyll-default-layout
 #  - jekyll-feed
 
 # Plugin: jekyll-toc (https://github.com/toshimaru/jekyll-toc)
