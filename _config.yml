@@ -1,0 +1,126 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: ASV-SAM
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://asvsam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+#github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: just-the-docs
+plugins:
+  - jekyll-toc
+  - jekyll-relative-links
+#  - jekyll-feed
+
+# Plugin: jekyll-toc (https://github.com/toshimaru/jekyll-toc)
+# toc:
+#   min_level: 1
+#   max_level: 6
+#   ordered_list: false
+#   no_toc_section_class: no_toc_section
+#   list_id: toc
+#   list_class: section-nav
+#   sublist_class: ''
+#   item_class: toc-entry
+#   item_prefix: toc-
+
+# External navigation links
+nav_external_links:
+  - title: GitHub ASV-SAM
+    url: https://github.com/asvsam/asvsam
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+  - title: DockerHub ASV-SAM
+    url: https://hub.docker.com/u/asvsam
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+  - title: GitHub ASV-SAM Installer
+    url: https://github.com/asvsam/asvsam-installer
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+  - title: GitHub ASV-SAM Website
+    url: https://github.com/asvsam/asvsam.github.io
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+
+# Aux links for the upper right navigation
+aux_links:
+  "ASV-SAM on GitHub":
+    - "//github.com/asvsam"
+
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "10.1.0"
+
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
+
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 2
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 5
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+
+# Set a path/url to a favicon that will be displayed by the browser
+#favicon_ico: "/assets/images/favicon.ico"
+
+# Set a path/url to a logo that will be displayed instead of the title
+#logo: "/assets/images/Logo.png"
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit on GitHub"
+gh_edit_repository: "https://github.com/asvsam/asvsam.github.io" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

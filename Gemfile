@@ -20,7 +20,8 @@ gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+#  gem "jekyll-feed", "~> 0.6"
+  gem 'jekyll-toc'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -37,3 +38,4 @@ gem "wdm", "~> 0.1.0", :platforms => [:mingw, :x64_mingw, :mswin]
 # kramdown v1, comment out this line.
 gem "kramdown-parser-gfm"
 
+gem "just-the-docs"
