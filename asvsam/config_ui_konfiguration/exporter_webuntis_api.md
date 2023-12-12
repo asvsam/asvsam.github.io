@@ -36,14 +36,14 @@ Prozess:
 -> Fertig in WebUntis UI
 
 Folgende Infommationen sollten sie nun verfügbar haben:
-- WEBUNTIS_SCHULNAME
+- WEBUNTIS_TENANT_ID
 - WEBUNTIS_SERVER_URL
 - WEBUNTIS_OIDC_SECRET
 - WEBUNTIS_API_PASSWORT
 
 ## ASV-SAM UI - Einrichtung des WebUntis Exporters
 
-- WEBUNTIS_SCHULNAME
+- WEBUNTIS_TENANT_ID
 - WEBUNTIS_SERVER_URL
 - WEBUNTIS_OIDC_SECRET
 - WEBUNTIS_API_PASSWORT
@@ -83,7 +83,7 @@ Folgende Infommationen sollten sie nun verfügbar haben:
     ],
     "resource": "https://api.webuntis.com/WebUntis/api",
     "scope": "roster-core",
-    "tokenUri": "<###_WEBUNTIS_SERVER_URL_###>/api/sso/<###_WEBUNTIS_SCHULNAME_###>/token",
+    "tokenUri": "<###_WEBUNTIS_SERVER_URL_###>/api/sso/v2/###_WEBUNTIS_TENANT_ID_###>/token",
     "verifySslHostTrust": true
 }
 ```
